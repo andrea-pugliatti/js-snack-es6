@@ -62,3 +62,11 @@ const solution1 = bici.reduce((lightest, current) =>
 );
 
 console.log(solution1.nome);
+
+// Soluzione alternativa 2
+// Sort dell'array e prendi la prima
+const solution2 = bici
+	.sort((lightest, current) => lightest.peso - current.peso)
+	.at(0);
+
+console.log(solution2.nome);
