@@ -38,11 +38,21 @@ const squadre = [
 const getRandomNumber = (min, max) =>
 	Math.floor(Math.random() * (max - min + 1)) + min;
 
-// Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
+// Genera numeri random al posto degli 0 nelle proprietà “puntiFatti" e “falliSubiti”.
 for (let i = 0; i < squadre.length; i++) {
 	const current = squadre[i];
 	current.puntiFatti = getRandomNumber(20, 60);
 	current.falliSubiti = getRandomNumber(40, 120);
 }
 
+// Crea un array in cui esistono solo "nome" e "falliSubiti".
+const newArray = [];
+for (let i = 0; i < squadre.length; i++) {
+	const current = {};
+	current.nome = squadre[i].nome;
+	current.falliSubiti = squadre[i].falliSubiti;
+	newArray.push(current);
+}
+
 console.log(squadre);
+console.log(newArray);
