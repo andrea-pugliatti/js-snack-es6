@@ -28,3 +28,21 @@ const squadre = [
 	{ nome: "Udinese", puntiFatti: 0, falliSubiti: 0 },
 	{ nome: "Verona", puntiFatti: 0, falliSubiti: 0 },
 ];
+
+/**
+ * Returns a random number between a min number and a max number.
+ * @param {number} min
+ * @param {number} max
+ * @returns {number}
+ */
+const getRandomNumber = (min, max) =>
+	Math.floor(Math.random() * (max - min + 1)) + min;
+
+// Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
+for (let i = 0; i < squadre.length; i++) {
+	const current = squadre[i];
+	current.puntiFatti = getRandomNumber(20, 60);
+	current.falliSubiti = getRandomNumber(40, 120);
+}
+
+console.log(squadre);
