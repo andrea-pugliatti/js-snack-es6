@@ -6,3 +6,25 @@
  * Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e
  * stampiamo tutto in console.
  */
+
+const squadre = [
+	{ nome: "Atalanta", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Bologna", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Como", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Cremonese", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Fiorentina", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Genoa", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Inter", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Juventus", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Lazio", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Lecce", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Milan", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Napoli", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Parma", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Pisa", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Roma", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Sassuolo", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Torino", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Udinese", puntiFatti: 0, falliSubiti: 0 },
+	{ nome: "Verona", puntiFatti: 0, falliSubiti: 0 },
+];
