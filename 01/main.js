@@ -54,3 +54,11 @@ for (let i = 1; i < bici.length; i++) {
 
 // Stampa
 console.log(lightest.nome);
+
+// Soluzione alternativa 1
+// Usa reduce(), compara lightest all'elemento corrente e ritorna il più piccolo
+const solution1 = bici.reduce((lightest, current) =>
+	lightest.peso < current.peso ? lightest : current,
+);
+
+console.log(solution1.nome);
