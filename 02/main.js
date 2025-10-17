@@ -44,6 +44,14 @@ for (let i = 0; i < squadre.length; i++) {
 	current.puntiFatti = getRandomNumber(20, 60);
 	current.falliSubiti = getRandomNumber(40, 120);
 }
+/*
+// Oppure
+squadre.map((current) => {
+	current.puntiFatti = getRandomNumber(20, 60);
+	current.falliSubiti = getRandomNumber(40, 120);
+	return current;
+});
+*/
 
 // Crea un array in cui esistono solo "nome" e "falliSubiti".
 const newArray = [];
@@ -53,6 +61,12 @@ for (let i = 0; i < squadre.length; i++) {
 	current.falliSubiti = squadre[i].falliSubiti;
 	newArray.push(current);
 }
-
+/*
+// Oppure
+const newArray = squadre;
+newArray.forEach((current) => {
+	delete current.puntiFatti;
+});
+*/
 console.log(squadre);
 console.log(newArray);
