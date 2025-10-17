@@ -54,6 +54,8 @@ for (let i = 1; i < bici.length; i++) {
 
 // Stampa
 console.log(lightest.nome);
+const soluzioneElement = document.getElementById("soluzione");
+soluzioneElement.textContent = `La bici ${lightest.nome} è la più leggera con ${lightest.peso} kg.`;
 
 // Soluzione alternativa 1
 // Usa reduce(), compara lightest all'elemento corrente e ritorna il più piccolo
