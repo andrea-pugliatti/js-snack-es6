@@ -68,5 +68,52 @@ newArray.forEach((current) => {
 	delete current.puntiFatti;
 });
 */
-console.log(squadre);
-console.log(newArray);
+// Stampa su console
+// console.log(squadre);
+// console.log(newArray);
+
+// Oppure
+squadre.forEach((current) => {
+	console.log(`${current.nome} ${current.puntiFatti} ${current.falliSubiti}`);
+});
+
+newArray.forEach((current) => {
+	console.log(`${current.nome} ${current.falliSubiti}`);
+});
+
+// Stampa su schermo
+const solElement = document.getElementById("soluzione");
+squadre.forEach((current) => {
+	const ul = document.createElement("ul");
+	for (const key in current) {
+		const element = current[key];
+		const li = document.createElement("li");
+		if (key === "puntiFatti") {
+			li.textContent += `Punti Fatti: `;
+		}
+		if (key === "falliSubiti") {
+			li.textContent += `Falli subiti: `;
+		}
+		li.textContent += `${element}`;
+		ul.append(li);
+	}
+	solElement.append(ul);
+});
+
+const nuovoElement = document.getElementById("nuovo-array");
+newArray.forEach((current) => {
+	const ul = document.createElement("ul");
+	for (const key in current) {
+		const element = current[key];
+		const li = document.createElement("li");
+		if (key === "puntiFatti") {
+			li.textContent += `Punti Fatti: `;
+		}
+		if (key === "falliSubiti") {
+			li.textContent += `Falli subiti: `;
+		}
+		li.textContent += `${element}`;
+		ul.append(li);
+	}
+	nuovoElement.append(ul);
+});
