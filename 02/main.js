@@ -132,9 +132,11 @@ squadre.map((current) => {
 // Crea un array in cui esistono solo "nome" e "falliSubiti".
 const newArray = [];
 for (let i = 0; i < squadre.length; i++) {
-	const current = {};
-	current.nome = squadre[i].nome;
-	current.falliSubiti = squadre[i].falliSubiti;
+	const current = {
+		nome: squadre[i].nome,
+		falliSubiti: squadre[i].falliSubiti,
+	};
+
 	newArray.push(current);
 }
 /*
@@ -144,15 +146,14 @@ newArray.forEach((current) => {
 	delete current.puntiFatti;
 });
 */
+
 // Stampa su console
 // console.log(squadre);
 // console.log(newArray);
-
 // Oppure
 squadre.forEach((current) => {
 	console.log(`${current.nome} ${current.puntiFatti} ${current.falliSubiti}`);
 });
-
 newArray.forEach((current) => {
 	console.log(`${current.nome} ${current.falliSubiti}`);
 });
