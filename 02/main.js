@@ -143,6 +143,8 @@ for (let i = 0; i < squadre.length; i++) {
 // Oppure
 const newArray = squadre;
 newArray.forEach((current) => {
+	// delete eliminerebbe l'oggetto originale
+	// perché newArray punta all'originale e non fa una copia
 	delete current.puntiFatti;
 });
 */
